@@ -14,24 +14,18 @@ namespace SLL_TestApp
             SinglyLinkedList<int> test = new SinglyLinkedList<int>();
 
             test.Add(15);
-            test.Add(15);
-            test.Add(15);
-            test.Add(15);
+            test.Add(2);
+            test.Add(3);
+            test.Add(5);
 
             //Console.WriteLine($"{test.}")
 
-            var exist = test.Contains(15);
+            var exist = test.Contains(3);
 
+            var a= test.Remove(15);
 
-            Helikopter A = new Helikopter(1);
-            Helikopter B = new Helikopter(2);
+            var exist2 = test.Contains(15);
 
-            SinglyLinkedList<Helikopter> helis = new SinglyLinkedList<Helikopter>();
-
-            //helis.Add(A);
-            helis.Add(B);
-
-            var b= helis.Contains(A);
         }
     }
 

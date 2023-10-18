@@ -59,5 +59,30 @@ namespace SinglyLinkedList
             }
             return false;
         }
+
+        public bool Remove(T item)
+        {
+            Node<T> prev = m_head;
+
+            if (m_head.m_data.Equals(item))
+            {
+                m_head = m_head.m_next;
+                return true;
+            }
+
+            for (Node<T> i = m_head; i != null; i = i.m_next)
+            {
+
+                if (i.m_data.Equals(item))
+                {
+                    prev.m_next = i.m_next;
+                    i = null;
+                    return true;
+                }
+                prev = i;
+            }
+
+            return false;
+        }
     }
 }
