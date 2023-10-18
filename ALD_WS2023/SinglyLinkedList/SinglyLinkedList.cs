@@ -75,6 +75,7 @@ namespace SinglyLinkedList
 
                 if (i.m_data.Equals(item))
                 {
+                    if (m_last.Equals(item)) m_last = prev;
                     prev.m_next = i.m_next;
                     i = null;
                     return true;

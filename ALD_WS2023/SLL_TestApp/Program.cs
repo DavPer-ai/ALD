@@ -22,9 +22,9 @@ namespace SLL_TestApp
 
             var exist = test.Contains(3);
 
-            var a= test.Remove(15);
+            var a= test.Remove(3);
 
-            var exist2 = test.Contains(15);
+            var exist2 = test.Contains(3);
 
         }
     }
