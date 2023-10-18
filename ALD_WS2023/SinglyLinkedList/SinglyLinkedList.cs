@@ -20,6 +20,8 @@ namespace SinglyLinkedList
 
         void Add(T item)
         {
+            m_cnt++;
+
             Node<T> tmp = new Node<T>();
             if(m_head== null)
             {
