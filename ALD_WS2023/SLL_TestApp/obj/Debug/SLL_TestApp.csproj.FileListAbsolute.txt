@@ -1,0 +1,10 @@
+C:\Users\user\Source\Repos\ALD\ALD_WS2023\SLL_TestApp\bin\Debug\SLL_TestApp.exe.config
+C:\Users\user\Source\Repos\ALD\ALD_WS2023\SLL_TestApp\bin\Debug\SLL_TestApp.exe
+C:\Users\user\Source\Repos\ALD\ALD_WS2023\SLL_TestApp\bin\Debug\SLL_TestApp.pdb
+C:\Users\user\Source\Repos\ALD\ALD_WS2023\SLL_TestApp\bin\Debug\SinglyLinkedList.dll
+C:\Users\user\Source\Repos\ALD\ALD_WS2023\SLL_TestApp\bin\Debug\SinglyLinkedList.pdb
+C:\Users\user\Source\Repos\ALD\ALD_WS2023\SLL_TestApp\obj\Debug\SLL_TestApp.csproj.AssemblyReference.cache
+C:\Users\user\Source\Repos\ALD\ALD_WS2023\SLL_TestApp\obj\Debug\SLL_TestApp.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\ALD\ALD_WS2023\SLL_TestApp\obj\Debug\SLL_TestApp.csproj.CopyComplete
+C:\Users\user\Source\Repos\ALD\ALD_WS2023\SLL_TestApp\obj\Debug\SLL_TestApp.exe
+C:\Users\user\Source\Repos\ALD\ALD_WS2023\SLL_TestApp\obj\Debug\SLL_TestApp.pdb
