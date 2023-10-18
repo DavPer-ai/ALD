@@ -1,0 +1,6 @@
+C:\Users\user\source\repos\ALD_WS2023\SinglyLinkedList\bin\Debug\SinglyLinkedList.dll
+C:\Users\user\source\repos\ALD_WS2023\SinglyLinkedList\bin\Debug\SinglyLinkedList.pdb
+C:\Users\user\source\repos\ALD_WS2023\SinglyLinkedList\obj\Debug\SinglyLinkedList.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\ALD_WS2023\SinglyLinkedList\obj\Debug\SinglyLinkedList.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ALD_WS2023\SinglyLinkedList\obj\Debug\SinglyLinkedList.dll
+C:\Users\user\source\repos\ALD_WS2023\SinglyLinkedList\obj\Debug\SinglyLinkedList.pdb
