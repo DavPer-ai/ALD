@@ -85,5 +85,43 @@ namespace SinglyLinkedList
 
             return false;
         }
+
+        public bool IsObjectAtIndex(T item, int index)
+        {
+            int j = 0;//aktuelles Objekt
+
+            for (Node<T> i = m_head; i != null; i = i.m_next)
+            {        
+                if (j== index)
+                {
+                    if (i.m_data.Equals(item))
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                j++;
+            }
+            return false;
+        }
+
+        public T FindByIndex(int index)
+        {
+            int j = 0;//aktuelles Objekt
+
+            for (Node<T> i = m_head; i != null; i = i.m_next)
+            {
+                if (j == index)
+                {
+                    return (i.m_data);
+                }
+                j++;
+            }
+
+            return default(T);
+        }
     }
 }

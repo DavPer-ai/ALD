@@ -20,11 +20,11 @@ namespace SLL_TestApp
 
             //Console.WriteLine($"{test.}")
 
-            var exist = test.Contains(3);
+            var a=test.IsObjectAtIndex(15,1);
 
-            var a= test.Remove(3);
+            var b=test.FindByIndex(2);
 
-            var exist2 = test.Contains(3);
+            var c = test.FindByIndex(12);
 
         }
     }
