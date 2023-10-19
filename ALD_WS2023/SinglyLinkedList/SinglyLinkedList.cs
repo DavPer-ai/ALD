@@ -77,7 +77,7 @@ namespace SinglyLinkedList
                 {
                     if (m_last.Equals(item)) m_last = prev;
                     prev.m_next = i.m_next;
-                    i = null;
+                    m_cnt--;
                     return true;
                 }
                 prev = i;
@@ -121,7 +121,21 @@ namespace SinglyLinkedList
                 j++;
             }
 
-            return default(T);
+            //return default(T);
+
+            throw new IndexOutOfRangeException();
+        }
+
+        public int Count()
+        {
+            return m_cnt;
+        }
+
+        public void Clear()
+        {
+            m_head = null;
+            m_last = null;
+            m_cnt = 0;
         }
     }
 }

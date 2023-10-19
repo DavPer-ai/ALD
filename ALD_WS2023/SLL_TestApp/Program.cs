@@ -11,20 +11,32 @@ namespace SLL_TestApp
     {
         static void Main(string[] args)
         {
-            SinglyLinkedList<int> test = new SinglyLinkedList<int>();
+            SinglyLinkedList<string> test = new SinglyLinkedList<string>();
 
-            test.Add(15);
-            test.Add(2);
-            test.Add(3);
-            test.Add(5);
+            test.Add("a");
+            test.Add("b");
+            test.Add("c");
+            test.Add("d");
 
             //Console.WriteLine($"{test.}")
 
-            var a=test.IsObjectAtIndex(15,1);
+            var a1 = test.IsObjectAtIndex("a", 0);
 
-            var b=test.FindByIndex(2);
+            var a2 = test.IsObjectAtIndex("a", 1);
 
-            var c = test.FindByIndex(12);
+            var b1 = test.FindByIndex(2);
+
+            var b2 = test.FindByIndex(3);
+
+            var b3 = test.FindByIndex(2);
+
+            var count = test.Count();
+
+            var c1 = test.FindByIndex(1);
+
+            test.Remove("b");
+
+            var c2 = test.FindByIndex(1);
 
         }
     }
