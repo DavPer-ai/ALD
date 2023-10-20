@@ -1,6 +1,7 @@
 ﻿using SinglyLinkedList;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,14 +12,19 @@ namespace SLL_TestApp
     {
         static void Main(string[] args)
         {
+            //TestSinglyLinkedList();
+
+            TestSinglyLinkedListWithDictionary();
+        }
+
+        private static void TestSinglyLinkedList()
+        {
             SinglyLinkedList<string> test = new SinglyLinkedList<string>();
 
             test.Add("a");
             test.Add("b");
             test.Add("c");
             test.Add("d");
-
-            //Console.WriteLine($"{test.}")
 
             var a1 = test.IsObjectAtIndex("a", 0);
 
@@ -37,25 +43,35 @@ namespace SLL_TestApp
             test.Remove("b");
 
             var c2 = test.FindByIndex(1);
-
-        }
-    }
-
-    internal class Helikopter
-    {
-        int _id;
-
-        public Helikopter(int id)
-        {
-            this._id = id;
         }
 
-        public override bool Equals(object obj)
+        private static void TestSinglyLinkedListWithDictionary()
         {
-            var heli = obj as Helikopter;
-            if (heli == null) return false;
+            SinglyLinkedList<string> wordList = DicReader.ReadDictionary();
 
-            return heli._id == _id;
+            Console.WriteLine("Geben Sie bitte eine Text ein:");
+
+            string textToTest = Console.ReadLine();
+
+            string[] wordsToTest = textToTest.Split(' ');
+
+            foreach (string word in wordsToTest)
+            {
+                if (wordList.Contains(word))
+                {
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write(word);
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write(word, ConsoleColor.White);
+                }
+
+                Console.Write(' ');
+            }
+
+            Console.ReadLine();
         }
     }
 }
