@@ -88,7 +88,7 @@ namespace SinglyLinkedList
 
         public bool IsObjectAtIndex(T item, int index)
         {
-            int j = 0;//aktuelles Objekt
+            int j = 0;//Count des aktuellen Objektes
 
             for (Node<T> i = m_head; i != null; i = i.m_next)
             {        
