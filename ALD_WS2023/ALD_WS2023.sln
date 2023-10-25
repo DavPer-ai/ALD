@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinglyLinkedList", "SinglyL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLL_TestApp", "SLL_TestApp\SLL_TestApp.csproj", "{A520273E-7576-4AA7-8962-E5C53449F10F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayList", "ArrayList\ArrayList.csproj", "{03ACD5C5-410A-459B-AB40-C90FBC978D04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A520273E-7576-4AA7-8962-E5C53449F10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A520273E-7576-4AA7-8962-E5C53449F10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A520273E-7576-4AA7-8962-E5C53449F10F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03ACD5C5-410A-459B-AB40-C90FBC978D04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03ACD5C5-410A-459B-AB40-C90FBC978D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03ACD5C5-410A-459B-AB40-C90FBC978D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03ACD5C5-410A-459B-AB40-C90FBC978D04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +18,17 @@ namespace SinglyLinkedList
 
         public T m_data {  get; set; }
     }
-    public class SinglyLinkedList<T>
+    public class SinglyLinkedList<T> : IEnumerable, IEnumerator<T>
     {
         Node<T> m_head { get; set; }
         Node<T> m_last { get; set; }
         int m_cnt { get; set; }
+
+        private Node<T> m_currentNode { get; set; }
+
+        public object Current { get { return Current; } }
+
+        T IEnumerator<T>.Current { get { return m_currentNode.m_data; } }
 
         public void Add(T item)
         {
@@ -136,6 +143,36 @@ namespace SinglyLinkedList
             m_head = null;
             m_last = null;
             m_cnt = 0;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            return this;
+        }
+
+        public bool MoveNext()
+        {
+            if (m_head == null) return false;
+
+            if(m_currentNode == null)
+            {
+                m_currentNode = m_head;
+                return true;
+            }
+
+            m_currentNode = m_currentNode.m_next;
+
+            return m_currentNode != null;
+        }
+
+        public void Reset()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Dispose()
+        {
+            // nothing
         }
     }
 }

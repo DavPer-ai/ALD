@@ -1,0 +1,2 @@
+C:\Users\user\source\repos\ALD\ALD_WS2023\ArrayList\obj\Debug\ArrayList.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\ALD\ALD_WS2023\ArrayList\obj\Debug\ArrayList.csproj.CoreCompileInputs.cache
