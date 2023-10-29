@@ -1,2 +1,6 @@
 C:\Users\user\source\repos\ALD\ALD_WS2023\ArrayList\obj\Debug\ArrayList.csproj.AssemblyReference.cache
 C:\Users\user\source\repos\ALD\ALD_WS2023\ArrayList\obj\Debug\ArrayList.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ALD\ALD_WS2023\ArrayList\bin\Debug\ArrayList.dll
+C:\Users\user\source\repos\ALD\ALD_WS2023\ArrayList\bin\Debug\ArrayList.pdb
+C:\Users\user\source\repos\ALD\ALD_WS2023\ArrayList\obj\Debug\ArrayList.dll
+C:\Users\user\source\repos\ALD\ALD_WS2023\ArrayList\obj\Debug\ArrayList.pdb

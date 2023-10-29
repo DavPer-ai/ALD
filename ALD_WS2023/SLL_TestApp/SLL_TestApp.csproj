@@ -51,6 +51,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ArrayList\ArrayList.csproj">
+      <Project>{03acd5c5-410a-459b-ab40-c90fbc978d04}</Project>
+      <Name>ArrayList</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SinglyLinkedList\SinglyLinkedList.csproj">
       <Project>{cae8b338-ac18-4306-b3b8-aca7f0a7f8d3}</Project>
       <Name>SinglyLinkedList</Name>

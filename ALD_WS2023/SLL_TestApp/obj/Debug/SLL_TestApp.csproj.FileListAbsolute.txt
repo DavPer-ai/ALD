@@ -8,3 +8,5 @@ C:\Users\user\Source\Repos\ALD\ALD_WS2023\SLL_TestApp\obj\Debug\SLL_TestApp.cspr
 C:\Users\user\Source\Repos\ALD\ALD_WS2023\SLL_TestApp\obj\Debug\SLL_TestApp.csproj.CopyComplete
 C:\Users\user\Source\Repos\ALD\ALD_WS2023\SLL_TestApp\obj\Debug\SLL_TestApp.exe
 C:\Users\user\Source\Repos\ALD\ALD_WS2023\SLL_TestApp\obj\Debug\SLL_TestApp.pdb
+C:\Users\user\source\repos\ALD\ALD_WS2023\SLL_TestApp\bin\Debug\ArrayList.dll
+C:\Users\user\source\repos\ALD\ALD_WS2023\SLL_TestApp\bin\Debug\ArrayList.pdb

@@ -1,10 +1,12 @@
 ﻿using SinglyLinkedList;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ArrayList;
 
 namespace SLL_TestApp
 {
@@ -12,9 +14,20 @@ namespace SLL_TestApp
     {
         static void Main(string[] args)
         {
-            TestSinglyLinkedList();
+            int[] intArray = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 4, 5 , 4 };
+            ArrayList<int> a = new ArrayList<int>(intArray);
+            //a.Add(55);
+            //a.InsertAt(2, 44);
 
-            TestSinglyLinkedListWithDictionary();
+            a.Remove(4);
+            a.Clear();
+            a.Add(5);
+            a.Add(5);
+            a.Add(5);
+            a.Add(5);
+
+
+            var b = a.Array;
         }
 
         private static void TestSinglyLinkedList()
