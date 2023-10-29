@@ -100,6 +100,23 @@ namespace ArrayList
             return _Count;
         }
 
-
+        public T this[int index]
+        {
+            get
+            {
+                return Array[index].Value;
+            }
+            set
+            {
+                if(index < Array.Length)
+                {
+                    Array[index].Value = value;
+                }
+                else
+                {
+                    throw new IndexOutOfRangeException();
+                }
+            }
+        }
     }
 }

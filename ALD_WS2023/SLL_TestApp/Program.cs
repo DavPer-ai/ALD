@@ -19,13 +19,10 @@ namespace SLL_TestApp
             //a.Add(55);
             //a.InsertAt(2, 44);
 
-            a.Remove(4);
-            a.Clear();
-            a.Add(5);
-            a.Add(5);
-            a.Add(5);
-            a.Add(5);
+            var count=a.Count();
 
+            var m= a[6];
+            a[5] = 123;
 
             var b = a.Array;
         }
