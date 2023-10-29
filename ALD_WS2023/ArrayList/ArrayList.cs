@@ -27,31 +27,31 @@ namespace ArrayList
                 Array[i] = new Node<T>(initArray[i]);
             }
 
-            Count = initArray.Length;
+            _Count = initArray.Length;
             //Array = initArray;
         }
 
-        public static int Count { get; set; }
+        public static int _Count { get; set; }
 
         public Node<T>[] Array;
 
         public void Add(T item)
         {
-            Count++;
+            _Count++;
 
-            if (Count  > Array.Length)
+            if (_Count  > Array.Length)
             {
                 System.Array.Resize<Node<T>>(ref Array, Array.Length * 2 + 1);
             }
 
-            Array[Count-1] = new Node<T>(item);
+            Array[_Count-1] = new Node<T>(item);
         }
 
         public void InsertAt(int index, T item)
         {
-            Count++;
+            _Count++;
 
-            if (Count > Array.Length)
+            if (_Count > Array.Length)
             {
                 System.Array.Resize<Node<T>>(ref Array, Array.Length * 2);
             }
@@ -63,13 +63,13 @@ namespace ArrayList
 
         public void RemoveAt(int index)
         {
-            Count--;
+            _Count--;
 
             System.Array.Copy(Array, index + 1, Array, index, Array.Length - (index + 1));
 
-            Array[Count] = null;
+            Array[_Count] = null;
 
-            if (Count <= Array.Length/2)
+            if (_Count <= Array.Length/2)
             {
                 System.Array.Resize<Node<T>>(ref Array, Array.Length / 2);
             }
@@ -91,8 +91,15 @@ namespace ArrayList
 
         public void Clear()
         {
-            Count = 0;
+            _Count = 0;
             Array = new Node<T>[0];
         }
+
+        public int Count()
+        {
+            return _Count;
+        }
+
+
     }
 }
