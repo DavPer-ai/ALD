@@ -24,7 +24,7 @@ namespace SLL_TestApp
             var m= a[6];
             a[5] = 123;
 
-            var b = a.Array;
+            var b = a._Array;
         }
 
         private static void TestSinglyLinkedList()

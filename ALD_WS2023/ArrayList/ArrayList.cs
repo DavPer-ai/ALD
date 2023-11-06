@@ -20,11 +20,11 @@ namespace ArrayList
     {
         public ArrayList(T[] initArray) 
         {
-            Array= new Node<T>[initArray.Length];
-
+            _Array= new Node<T>[initArray.Length];
+            
             for (int i = 0; i < initArray.Length; i++)
             {
-                Array[i] = new Node<T>(initArray[i]);
+                _Array[i] = new Node<T>(initArray[i]);
             }
 
             _Count = initArray.Length;
@@ -33,55 +33,55 @@ namespace ArrayList
 
         public static int _Count { get; set; }
 
-        public Node<T>[] Array;
+        public Node<T>[] _Array;
 
         public void Add(T item)
         {
             _Count++;
 
-            if (_Count  > Array.Length)
+            if (_Count  > _Array.Length)
             {
-                System.Array.Resize<Node<T>>(ref Array, Array.Length * 2 + 1);
+                System.Array.Resize<Node<T>>(ref _Array, _Array.Length * 2 + 1);
             }
 
-            Array[_Count-1] = new Node<T>(item);
+            _Array[_Count-1] = new Node<T>(item);
         }
 
         public void InsertAt(int index, T item)
         {
             _Count++;
 
-            if (_Count > Array.Length)
+            if (_Count > _Array.Length)
             {
-                System.Array.Resize<Node<T>>(ref Array, Array.Length * 2);
+                System.Array.Resize<Node<T>>(ref _Array, _Array.Length * 2);
             }
 
-            System.Array.Copy(Array, index, Array, index + 1, Array.Length - (index + 1));
+            System.Array.Copy(_Array, index, _Array, index + 1, _Array.Length - (index + 1));
 
-            Array[index] = new Node<T>(item);
+            _Array[index] = new Node<T>(item);
         }
 
         public void RemoveAt(int index)
         {
             _Count--;
 
-            System.Array.Copy(Array, index + 1, Array, index, Array.Length - (index + 1));
+            System.Array.Copy(_Array, index + 1, _Array, index, _Array.Length - (index + 1));
 
-            Array[_Count] = null;
+            _Array[_Count] = null;
 
-            if (_Count <= Array.Length/2)
+            if (_Count <= _Array.Length/2)
             {
-                System.Array.Resize<Node<T>>(ref Array, Array.Length / 2);
+                System.Array.Resize<Node<T>>(ref _Array, _Array.Length / 2);
             }
         }
 
         public void Remove(T item)
         {
-            for (int i = 0; i < Array.Length; i++)
+            for (int i = 0; i < _Array.Length; i++)
             {
-                if (Array[i] != null)
+                if (_Array[i] != null)
                 {
-                    if (Array[i].Value.Equals(item))
+                    if (_Array[i].Value.Equals(item))
                     {
                         RemoveAt(i);
                     }
@@ -92,7 +92,7 @@ namespace ArrayList
         public void Clear()
         {
             _Count = 0;
-            Array = new Node<T>[0];
+            _Array = new Node<T>[0];
         }
 
         public int Count()
@@ -104,13 +104,21 @@ namespace ArrayList
         {
             get
             {
-                return Array[index].Value;
+                if(0 < index && index < _Count)
+                {
+                    return _Array[index].Value;
+                }
+                else
+                {
+                    throw new IndexOutOfRangeException();
+                }
+
             }
             set
             {
-                if(index < Array.Length)
+                if(0 < index && index < _Count)
                 {
-                    Array[index].Value = value;
+                    _Array[index].Value = value;
                 }
                 else
                 {
