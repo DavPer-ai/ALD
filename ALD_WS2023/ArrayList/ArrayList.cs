@@ -71,7 +71,7 @@ namespace ArrayList
 
             if (_Count <= _Array.Length/2)
             {
-                System.Array.Resize<Node<T>>(ref _Array, _Array.Length / 2);
+                System.Array.Resize<Node<T>>(ref _Array, (_Array.Length / 2) +1);
             }
         }
 
